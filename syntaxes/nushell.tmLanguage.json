@@ -151,7 +151,11 @@
             "name": "constant.numeric.nushell"
         },
         "numbers": {
-            "match": "(?<![\\w-])[-+]?\\d+(?:\\.\\d*)?(?i:ns|us|ms|sec|min|hr|day|wk|b|kb|mb|gb|tb|pt|eb|zb|kib|mib|gib|tib|pit|eib|zib)?(?:(?![\\w.])|(?=\\.\\.))",
+            "match": "(?<![\\w-])[-+]?\\d+(?:\\.\\d*)?(?:(?![\\w.])|(?=\\.\\.))",
+            "name": "constant.numeric.nushell"
+        },
+        "durations": {
+            "match": "(?<![\\w-])[-+]?\\d+(?:\\.\\d*)?(?i:ns|us|ms|sec|min|hr|day|wk|b|kb|mb|gb|tb|pt|eb|zb|kib|mib|gib|tib|pit|eib|zib)(?:(?!\\.\\.))",
             "name": "constant.numeric.nushell"
         },
         "binary": {
@@ -176,6 +180,7 @@
         "constant-value": {
             "patterns": [
                 { "include": "#constant-keywords" },
+                { "include": "#durations" },
                 { "include": "#numbers" },
                 { "include": "#numbers-hexa" },
                 { "include": "#datetime" },
