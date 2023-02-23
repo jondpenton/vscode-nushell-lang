@@ -2051,6 +2051,10 @@ with-env [[X W]; [Y Z]] { $env.W }
 1..4
 1_000..1_100
 
+# numbers-hexa
+0x68_9d_6a
+0x689d6a
+
 # durations
 10000.1ms
 -500day
