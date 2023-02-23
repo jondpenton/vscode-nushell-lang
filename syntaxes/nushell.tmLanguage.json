@@ -147,7 +147,7 @@
             "name": "constant.numeric.nushell"
         },
         "numbers-hexa": {
-            "match": "(?<![\\w-])0x[0-9a-fA-F]+(?![\\w.])",
+            "match": "(?<![\\w-])0x(?:_?[0-9a-fA-F]_?)+(?![\\w.])",
             "name": "constant.numeric.nushell"
         },
         "numbers": {
