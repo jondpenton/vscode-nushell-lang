@@ -151,7 +151,7 @@
             "name": "constant.numeric.nushell"
         },
         "numbers": {
-            "match": "(?<![\\w-])[-+]?\\d+(?:\\.\\d*)?(?:(?![\\w.])|(?=\\.\\.))",
+            "match": "(?<![\\w-])[-+]?(?:_?\\d_?)+(?:\\.(?:_?\\d_?)*)?(?:(?![\\w.])|(?=\\.\\.))",
             "name": "constant.numeric.nushell"
         },
         "durations": {
